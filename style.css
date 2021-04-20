@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: Sintony, Arial;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(resources/photo/crowd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: darkorange;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    color: darkorange;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+button {
+    height: 80px;
+    width: 8%;
+    margin-top: 2%;
+    border-radius: 20px;
+    border-color: orange;
+    color: white;
+    top: 18%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+}
+
+.active {
+    color: orange;
+    border-color: rgba(150, 150, 150, 0.565);
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.container img {
+    width: 60%;
+    position: relative;
+}
+
+.non-active {
+    display: none;
+}
+
+p {
+    display: inline-block;
+    color: white;
+    top: 50%;
+    left: 50%;
+    margin-left: 6%;
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+.row {
+    position: flex;
+}
