@@ -15,38 +15,38 @@ body {
     align-items: center;
 }
 
-h1 {
+.main-title {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     margin-top: 20px;
-    color: darkorange;
-    text-shadow: 2px 2px 2px black;
+    color: #ff8c00;
+    text-shadow: 2px 2px 2px #000000;
 }
 
-h2 {
+.footer-info {
     font-size: 28px;
-    font-weight: normal;
+    font-weight: 100;
     text-align: center;
-    color: darkorange;
-    text-shadow: 2px 2px 2px black;
+    color: #ff8c00;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 
-button {
+.btn {
     height: 80px;
     width: 8%;
     margin-top: 2%;
     border-radius: 20px;
-    border-color: orange;
-    color: white;
+    border-color: #ffa500;
+    color: #ffffff;
     top: 18%;
     margin-left: 2%;
     margin-bottom: 10px;
 }
 
 .active {
-    color: orange;
+    color: #ffa500;
     border-color: rgba(150, 150, 150, 0.565);
 }
 
@@ -66,16 +66,12 @@ button {
     display: none;
 }
 
-p {
-    display: inline-block;
-    color: white;
+.key-name, .drum-name {
+    color: #ffffff;
     top: 50%;
     left: 50%;
-    margin-left: 6%;
-    margin-bottom: 30px;
-    padding-left: 5px;
 }
 
 .row {
-    position: flex;
+    position: relative;
 }

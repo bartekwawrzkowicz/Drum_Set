@@ -10,7 +10,7 @@
     <title>Drum Set</title>
 </head>
 <body>
-    <h1>DRUM SET</h1>
+    <h1 class="main-title">DRUM SET</h1>
     <div class="container">
         <img data-image="cl" class="" class="img" src="resources/photo/drum_kit.png" id="clean" alt="drum set">
         <img data-image="hh" class="non-active" class="img" src="resources/photo/drum_kit_active/drum_kit_hi_hat.png" id="hi-hat" alt="hi hat">
@@ -23,19 +23,43 @@
         <img data-image="rc" class="non-active" class="img" src="resources/photo/drum_kit_active/drum_kit_right_cymbal.png" id="right-cymbal" alt="ride">
     
         <div class="row">
-            <button data-sound="hh" id="hh">A<br>HI HAT</button>
-            <button data-sound="sd" id="sd">S<br>SNARE</button>
-            <button data-sound="bd" id="bd">X<br>BASS DRUM</button>
-            <button data-sound="lc" id="lc">Q<br>TRASH</button>
-            <button data-sound="lt" id="lt">W<br>HIGH TOM</button>
-            <button data-sound="rt" id="rt">E<br>LOW TOM</button>
-            <button data-sound="bt" id="bt">D<br>FLOOR TOM</button>
-            <button data-sound="rc" id="rc">R<br>RIDE</button>
+            <button data-sound="hh" class="btn" id="hh">
+                <p class="key-name">A</p>
+                HI HAT</p>
+            </button>
+            <button data-sound="sd" class="btn" id="sd">
+                <p class="key-name">S</p>
+                <p class="drum-name">SNARE</p>
+            </button>
+            <button data-sound="bd" class="btn" id="bd">
+                <p class="key-name">X</p>
+                <p class="drum-name">BASS</p>
+            </button>
+            <button data-sound="lc" class="btn" id="lc">
+                <p class="key-name">Q</p>
+                <p class="drum-name">TRASH</p>
+            </button>
+            <button data-sound="lt" class="btn" id="lt">
+                <p class="key-name">W</p>
+                HIGH TOM</p>
+            </button>
+            <button data-sound="rt" class="btn" id="rt">
+                <p class="key-name">E</p>
+                <p class="drum-name">LOW TOM</p>
+            </button>
+            <button data-sound="bt" class="btn" id="bt">
+                <p class="key-name">D</p>
+                <p class="drum-name">FLOOR</p>
+            </button>
+            <button data-sound="rc" class="btn" id="rc">
+                <p class="key-name">R</p>
+                <p class="drum-name">RIDE</p>
+            </button>
         </div>
 
-        <div class="footer">
-        <h2>www.codeodrive.com (2021)</h2>
-        </div>
+        <footer>
+        <h2 class="footer-info">www.codeodrive.com (2021)</h2>
+        </footer>
     <script src="app.js"></script>
 </body>
 </html>
