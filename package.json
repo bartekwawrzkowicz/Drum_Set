@@ -1,0 +1,22 @@
+{
+  "name": "drum_set-1",
+  "version": "1.0.0",
+  "description": "This is my single-page Application based mostly on JavaScript. After pushing a particular key a function is called that plays a sound. This sound is associated with a concrete part of a drum set (for example - snare drum, hihat, ride cymbal, floor tom etc.)",
+  "main": "app.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekwawrzkowicz/Drum_Set.git"
+  },
+  "author": "codeodrive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartekwawrzkowicz/Drum_Set/issues"
+  },
+  "homepage": "https://github.com/bartekwawrzkowicz/Drum_Set#readme"
+}
