@@ -53,9 +53,9 @@ body {
 
 .active {
     color: #ffa500;
+    transform:scale(1.03);
     border-color: rgba(150, 150, 150, 0.565);
 }
-
 .container {
     position: absolute;
     width: 100%;
