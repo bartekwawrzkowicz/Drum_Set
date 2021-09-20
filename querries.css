@@ -1,15 +1,4 @@
-/* big tablets to 1200px */
-@media only screen and (max-width: 1200px) {
-
-h1 {
-   font-size: 35px;
-}
-
-
-}
-
-/* small phones to small tablets 481-767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     h1 {
         font-size: 30px;
     }
@@ -19,7 +8,7 @@ h1 {
     }
 
     .buttons {
-        display: flex;;
+        display: flex;
     }
 
     .btn {

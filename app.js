@@ -39,7 +39,6 @@ const keyDownHandler = event => {
     if (!image) return;
     picClean.classList.add('non-active');
     image.classList.remove('non-active');
-
 }
 
 const keyUpHandler = event => {
@@ -56,9 +55,11 @@ const clickHandler = event => {
     const audio = document.querySelector(`audio[data-key="${event.target.dataset.key}"]`);
     const image = document.querySelector(`img[data-key="${event.target.dataset.key}"]`);
 
+    if (!audio) return;
     audio.currentTime = 0;
     audio.play();
 
+    if (!image) return;
     picClean.classList.add('non-active');
     image.classList.remove('non-active');
 
