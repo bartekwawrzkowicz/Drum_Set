@@ -9,11 +9,25 @@ const picRightTom = document.getElementById('right-tom');
 const picBassTom = document.getElementById('bass-tom');
 const picRightCymbal = document.getElementById('right-cymbal');
 
+// BUTTONS --------------------------------------------------
+const buttonList = [
+    hiHatBtn = document.getElementById('hh'),
+    snareBtn = document.getElementById('sd'),
+    bassDrumBtn = document.getElementById('bd'),
+    trashBtn = document.getElementById('lc'),
+    highTomBtn = document.getElementById('lt'),
+    lowTomBtn = document.getElementById('rt'),
+    bassTomBtn = document.getElementById('bt'),
+    rideBtn = document.getElementById('rc'),
+]
+
 // LOGIC ----------------------------------------------------
 
-const playDrum = event => {
+
+
+const keyDownHandler = event => {
     const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
-    const key = document.querySelector(`button[data-sound="${event.keyCode}"]`);
+    const key = document.querySelector(`button[data-key="${event.keyCode}"]`);
     const image = document.querySelector(`img[data-key="${event.keyCode}"]`);
 
     if (!audio) return;
@@ -22,12 +36,14 @@ const playDrum = event => {
 
     key.classList.add('active');
 
+    if (!image) return;
     picClean.classList.add('non-active');
     image.classList.remove('non-active');
+
 }
 
-const removeTransition = event => {
-    const key = document.querySelector(`button[data-sound="${event.keyCode}"`);
+const keyUpHandler = event => {
+    const key = document.querySelector(`button[data-key="${event.keyCode}"`);
     const image = document.querySelector(`img[data-key="${event.keyCode}"]`);
 
     key.classList.remove('active');
@@ -36,5 +52,24 @@ const removeTransition = event => {
     image.classList.add('non-active');
 }
 
-window.addEventListener('keydown', playDrum);
-window.addEventListener('keyup', removeTransition);
+const clickHandler = event => {
+    const audio = document.querySelector(`audio[data-key="${event.target.dataset.key}"]`);
+    const image = document.querySelector(`img[data-key="${event.target.dataset.key}"]`);
+
+    audio.currentTime = 0;
+    audio.play();
+
+    picClean.classList.add('non-active');
+    image.classList.remove('non-active');
+
+    setTimeout(() => {
+        picClean.classList.remove('non-active');
+        image.classList.add('non-active');
+    }, 200);
+}
+
+const buttons = buttonList.map(button => button.addEventListener('click', clickHandler))
+
+
+window.addEventListener('keydown', keyDownHandler);
+window.addEventListener('keyup', keyUpHandler);

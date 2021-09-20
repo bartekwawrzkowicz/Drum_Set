@@ -63,9 +63,12 @@ body {
     text-align: center;
 }
 
+.container-images {
+    position: relative;
+}
+
 .container img {
     width: 60%;
-    position: relative;
 }
 
 .non-active {
